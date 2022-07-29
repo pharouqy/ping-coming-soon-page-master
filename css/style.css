@@ -6,8 +6,7 @@ body {
   flex-direction: column;
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
-  height: 100vh;
-  margin: 0 auto;
+  margin: 50px auto;
   max-width: 1440px;
   box-sizing: border-box;
 }
@@ -47,11 +46,46 @@ body main form {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   margin: 0 0 50px 0;
 }
-body main form div > button {
+body main form div {
+  height: 50px;
+}
+body main form div button {
+  width: 150px;
   margin-left: 15px;
+  color: #fff;
+  background-color: hsl(223deg, 87%, 63%);
+  border: 1px solid hsl(223deg, 87%, 63%);
+  border-radius: 150px;
+  height: 50px;
+  padding: 0 25px;
+}
+body main form div button:hover {
+  box-shadow: 1px 1px 15px 0px hsl(223deg, 87%, 63%);
+  cursor: pointer;
+}
+body main form div input {
+  width: 400px;
+  border: 1px solid hsl(223deg, 100%, 88%);
+  border-radius: 150px;
+  height: 50px;
+  padding: 0 25px;
+}
+body main form div input:focus {
+  outline: none;
+}
+body main form div input::placeholder {
+  color: hsl(223deg, 100%, 88%);
+}
+body main form div #ErrorMsg {
+  text-align: left;
+  color: hsl(354deg, 100%, 66%);
+  font-size: 1rem;
+  margin: 5px 0 0 25px;
+  font-style: italic;
 }
 body main div {
   text-align: center;
@@ -93,6 +127,31 @@ body footer div p {
   font-weight: 300;
   margin: 0 0 25px 0;
   color: hsl(0deg, 0%, 59%);
+}
+
+@media all and (max-width: 375px) {
+  body main h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 25px 0 35px 0;
+  }
+  body main h2 {
+    font-size: 0.8rem;
+  }
+  body main form div {
+    height: unset;
+  }
+  body main form div input {
+    width: 300px;
+  }
+  body main form div #ErrorMsg {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  body main form div button {
+    width: 350px;
+    margin: 25px 0 50px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
