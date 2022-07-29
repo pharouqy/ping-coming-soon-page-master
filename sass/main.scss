@@ -177,9 +177,16 @@ body {
                 font-size: 0.8rem;
             }
 
+            div {
+                img {
+                    width: $width;
+                }
+            }
+
             form {
                 div {
                     height: unset;
+
                     input {
                         width: 300px;
                     }

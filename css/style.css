@@ -138,6 +138,9 @@ body footer div p {
   body main h2 {
     font-size: 0.8rem;
   }
+  body main div img {
+    width: 100%;
+  }
   body main form div {
     height: unset;
   }
